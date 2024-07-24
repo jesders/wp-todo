@@ -1,55 +1,54 @@
-=== Favorite Wrestlers ===
-Contributors:      The WordPress Contributors
-Tags:              block
-Tested up to:      6.1
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+# Favorite Wrestlers Gutenberg Block
+This project is a custom WordPress Gutenberg block that allows users to manage their favorite wrestlers. It includes both backend and frontend editing capabilities and is built with React, modern JavaScript, and WordPress.
 
-Example block scaffolded with Create Block tool.
+## Features
+- Add and manage a list of favorite wrestlers
+- Semantic HTML and custom CSS for styling
+- Built with React and modern JavaScript
+- Accessibility considerations
 
-== Description ==
+## Prerequisites
+- Docker: Required to set up the local development environment.
+- wp-env: WordPress environment tool to easily spin up a WordPress instance.
+Getting Started
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+### 1. Clone the Repository
+Clone this repository to your local machine:
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+```git clone git@github.com:jesders/wp-todo.git```
+```cd favorite-wrestlers```
 
-== Installation ==
+### 2. Install Dependencies
+Ensure Docker and wp-env are installed on your system. Then install Node.js dependencies:
 
-This section describes how to install the plugin and get it working.
+```npm install```
 
-e.g.
+### 3. Set Up the Development Environment
+Using Docker and wp-env, start the WordPress environment
 
-1. Upload the plugin files to the `/wp-content/plugins/favorite-wrestlers` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+```wp-env start```
+
+This command will set up and start a local WordPress environment using Docker.
+
+Access the WordPress admin dashboard (usually at http://localhost:8888/wp-admin).
+- username: admin
+- password: password
+
+Navigate to Plugins and activate the Favorite Wrestlers plugin, if it isn't already.
 
 
-== Frequently Asked Questions ==
+## Build the Project
+Build the JavaScript and CSS files:
 
-= A question that someone might have =
+```npm run build```
 
-An answer to that question.
 
-= What about foo bar? =
+## Using the Block
+##### Add the Block
 
-Answer to foo bar dilemma.
+1. In the WordPress editor, click on the Add Block button.
+2. Search for Favorite Wrestlers and add the block to your post or page.
 
-== Screenshots ==
+##### Editing
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
-
-== Changelog ==
-
-= 0.1.0 =
-* Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+On the backend, you can add and manage wrestlers through the block editor.
