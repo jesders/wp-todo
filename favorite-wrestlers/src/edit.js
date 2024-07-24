@@ -19,8 +19,8 @@ export default function Edit({ attributes, setAttributes }) {
 
 	return (
 		<div {...useBlockProps()}>
-			<WrestlerInput addWrestler={addWrestler} />
 			<WrestlerList wrestlers={wrestlers} removeWrestler={removeWrestler} />
+			<WrestlerInput addWrestler={addWrestler} />
 		</div>
 	);
 }

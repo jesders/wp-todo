@@ -4,6 +4,23 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-create-block-favorite-wrestlers {
-	border: 1px dotted #f00;
+.wrestler-input {
+	.components-text-control__input {
+		display: block;
+		border: 1px solid #e5e7eb;
+		background-color: transparent;
+		padding: 6px 0px 6px 4px;
+		color: #111827;
+		font-size: 14px;
+		line-height: 1.25;
+		border-radius: 4px;
+
+		&:focus-visible {
+			border: 1px solid #9ca3af;
+		}
+
+		::placeholder {
+			color: #9ca3af;
+		}
+	}
 }

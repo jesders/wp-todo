@@ -6,7 +6,56 @@
  */
 
 .wp-block-create-block-favorite-wrestlers {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	padding: 12px;
+	color: #111827;
+	border: 1px solid #e5e7eb;
+
+	ul {
+		padding: 0;
+		margin: 0 0 24px 0;
+	}
+
+	li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 12px 8px;
+		border-radius: 4px;
+		background-color: #e5e7eb;
+		margin-top: 4px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.components-button {
+		border-radius: 4px;
+		background: #818cf8;
+		padding: 8px 12px;
+		font-size: 14px;
+		font-weight: 600;
+		color: #fff;
+		box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+
+		&:hover,
+		&:focus-visible {
+			background-color: #6366f1;
+		}
+
+		&.is-destructive {
+			text-decoration: none;
+			background-color: #f87171;
+
+			&:hover,
+			&:focus {
+				background-color: #ef4444;
+			}
+
+			svg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
 }
